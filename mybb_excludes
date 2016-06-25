@@ -1,0 +1,45 @@
+# Excludes for MyBB forums
+# Source for target forum system is available at https://github.com/mybb/mybb/
+
+# Registration/login/logout and other things related to the viewing user
+/member\.php
+/usercp\.php
+/usercp2\.php
+/private\.php
+/sendthread\.php
+/printthread\.php
+
+# Post specific, we only want to load threads
+my_post_key=
+# /phpboard/showthread.php?tid=10285&pid=390204#pid390204
+#pid\d+
+
+
+# Alternate viewing modes, we only need to see any given post once
+# /phpboard/showthread.php?mode=threaded&tid=10285&pid=390203#pid390203
+# /phpboard/showthread.php?mode=linear&tid=10285&pid=390203#pid390203
+mode=linear
+mode=threaded
+
+
+# "Actions" we don't want. There are more of these than ones we want, so we'll just use a negative match.
+# ALLOW User profile page: /phpboard/member.php?action=profile&uid=969
+# If anything else has action=SOMETHING, we'll match that
+\.php.+action=(?!profile)
+
+
+# Reply and post
+/newreply\.php
+/newthread\.php
+
+
+# Search
+# /phpboard/search.php?action=finduser&uid=3340
+# This will interfere with user post listings, but we don't really need those since we're grabbing all the posts anyway.
+/search\.php
+
+
+# Lite/archive version (We're grabbing the full version anyway so this would just double our pageloads) (The lite version also has less actual data, since attachments aren't shown in it.)
+/archive/index\.php\?forum-\d+\.html
+/archive/index\.php\?thread-\d+\.html
+/archive/index\.php\?thread-\d+-\d+\.html
