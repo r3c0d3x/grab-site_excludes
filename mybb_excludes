@@ -15,11 +15,13 @@ my_post_key=
 #pid\d+
 
 
-# Alternate viewing modes, we only need to see any given post once
+# Alternate viewing and ordering modes, we only need to see any given post once
 # /phpboard/showthread.php?mode=threaded&tid=10285&pid=390203#pid390203
 # /phpboard/showthread.php?mode=linear&tid=10285&pid=390203#pid390203
 mode=linear
 mode=threaded
+#/phpboard/forumdisplay.php?fid=9&datecut=0&sortby=lastpost&order=desc
+sortby=
 
 
 # "Actions" we don't want. There are more of these than ones we want, so we'll just use a negative match.
