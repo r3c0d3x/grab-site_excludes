@@ -1,5 +1,7 @@
 # Excludes for MyBB forums
+# Software homepage: https://www.mybb.com/
 # Source for target forum system is available at https://github.com/mybb/mybb/
+
 
 # Registration/login/logout and other things related to the viewing user
 /member\.php
@@ -9,11 +11,12 @@
 /sendthread\.php
 /printthread\.php
 
+
 # Post specific, we only want to load threads
 my_post_key=
 # /phpboard/showthread.php?tid=10285&pid=390204#pid390204
-#pid\d+
-
+# /phpboard/showthread.php?tid=7935&pid=306331
+/showthread.php\?tid=\d+&pid=\d+
 
 # Alternate viewing and ordering modes, we only need to see any given post once
 # /phpboard/showthread.php?mode=threaded&tid=10285&pid=390203#pid390203
