@@ -1,0 +1,15 @@
+# Excludes for phpBB forums
+# Software homepage: https://www.phpbb.com/
+# Source for target forum system is available at https://github.com/phpbb/phpbb
+
+# User controls
+/ucp\.php
+
+# Posting
+/posting\.php
+
+
+/search\.php\?search_id=unanswered
+
+# We don't need the print view since we're loading all the posts anyway
+view=print
