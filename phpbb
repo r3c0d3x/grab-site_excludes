@@ -2,14 +2,25 @@
 # Software homepage: https://www.phpbb.com/
 # Source for target forum system is available at https://github.com/phpbb/phpbb
 
+
 # User controls
 /ucp\.php
 
 # Posting
 /posting\.php
 
+# Search
+/search\.php\?
 
-/search\.php\?search_id=unanswered
 
 # We don't need the print view since we're loading all the posts anyway
 view=print
+
+
+
+
+# We want attachments
+# /talk/download/file.php?id=51&mode=view
+# /talk/download/file.php?id=46&t=1
+
+# We want avatars: /talk/download/file.php?avatar=16.jpg
