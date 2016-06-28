@@ -16,6 +16,9 @@
 # We don't need the print view since we're loading all the posts anyway
 view=print
 
+#Links to a post in a thread
+# /talk/viewtopic.php?f=8&t=112&p=635
+/viewtopic\.php\?f=\d+&t=\d+&p=\d+
 
 
 
